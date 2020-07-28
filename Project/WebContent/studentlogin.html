@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+background-color: grey;
+}
+#container{
+border: 2px solid black;
+text-align: center;
+line-height: 40px;
+background-color: #eae9e9;
+padding: 30px;
+
+}
+
+
+#blocksl{
+border: 1px solid black;
+width: 40%;
+float:left;
+margin-left: auto;
+margin-right: auto; 
+height: 40%;
+
+
+}
+#blocksr{
+border: 1px solid black;
+width: 40%;
+float:right;
+margin-left: auto;
+margin-right: auto; 
+height: 40%;
+
+
+}
+
+.fie{
+margin:0px;
+padding:2px;
+clear:both;
+}
+input {
+border:2px solid grey;
+
+
+width:99%;
+height:30px;
+margin-top:4px;
+}
+select{
+width:100%;
+height: 30px;
+border: 2px solid grey;
+padding-right: 2px;
+margin-top: 4px;
+
+
+
+}
+.btn{
+background-color: grey;
+color: white;
+padding-right:12px;
+
+padding-left:12px;
+padding-top: 10px;
+
+padding-bottom: 10px;
+text-decoration: none;
+}
+
+.btn:hover{
+background-color: black;
+color: white;
+}
+
+
+</style>
+</head>
+<body>
+<div id="container">
+	<h1>Student Section</h1>
+	<hr>
+	<div id="blocksl">
+	<h3 class="fie">Student Login</h3>
+	<fieldset>
+	<legend>Login</legend> 
+	<form action="student.jsp" method="post">
+	<input type="email" name="username" placeholder="Enter Username/Email" required="required" ><br>
+	<input type="password" name="password" placeholder="Enter Password" required="required" ><br>
+	<input type="submit" value="Login"><br>
+	</form>
+	
+	</fieldset>
+	
+	
+	</div>
+	
+	
+	<div id="blocksr">
+	<h3 class="fie">Student SignUp</h3>
+	<fieldset>
+	<legend>SignUp</legend> 
+	
+	<form action="studentsignup.jsp" method="post">
+	<input type="email" name="username" placeholder="Enter Username/Email" required="required" ><br>
+	<input type="password" name="password" placeholder="Enter Password" required="required" ><br>
+	<input type="text" name="name" placeholder="Enter Name" required="required" ><br>
+	<input type="text" name="contact" placeholder="Enter Contact" required="required" ><br>
+	<input type="text" name="college" placeholder="Enter College" required="required" >
+	<br>
+	
+	<select name="qualif" required>
+				<option value="other" selected="selected">Qualification</option>
+				<option value="bca">BCA</option>
+				<option value="mca">MCA</option>
+				<option value="btech">BTech</option>
+				<option value="diploma">Diploma</option>
+				<option value="other">Other</option>
+					
+				</select>
+				<br>
+	
+	<select name="yop">
+				<option value="2014" selected="selected">Year Of Passing</option>
+				
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+					
+				</select><br>
+	<select name="tech">
+				<option value="C">Technology</option>
+				<option value="C">C</option>
+				<option value="JAVA">JAVA</option>
+				<option value="C++">C++</option>
+					
+				</select>
+	<br>
+	
+	<input type="submit" value="Signup"><br>
+	</form>
+	
+	</fieldset>
+	
+	
+	</div>
+	<h3 class="fie"><hr><a href="index.jsp" class="btn">Home</a><hr></h3>
+	
+</div>
+
+
+</body>
+</html>
